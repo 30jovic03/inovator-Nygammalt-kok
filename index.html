@@ -8,30 +8,36 @@
   <script defer src="./assets/js/toggleMenu.js"></script>
   <title>Nygammalt kök</title>
 </head>
+<header>
+  <div class="container">
+    <ul class="navbar" id="main-navbar">
+      <li class="icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li>
+      <li class="logo">
+        <a href="#"><img src="./assets/images/nygammaltkok-loggo-50.jpg" alt="logo" /></a>
+      </li>
+      <li><a href="#" class="active">Hem</a></li>
+      <li><a href="#">Produkter</a></li>
+      <li><a href="#">Inspiration</a></li>
+      <li><a href="#">Frågor & Svar</a></li>
+      <li><a href="#">Om Oss</a></li>
+      <li><a href="#">Priser</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </div>
+</header>
 <body>
-  <header>
-    <div class="container">
-      <ul class="navbar" id="main-navbar">
-        <li class="icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li>
-        <li class="logo">
-          <a href="#"><img src="./assets/images/nygammaltkok-loggo-50.jpg" alt="logo" /></a>
-        </li>
-        <li><a href="#" class="active">Hem</a></li>
-        <li><a href="#">Produkter</a></li>
-        <li><a href="#">Inspiration</a></li>
-        <li><a href="#">Frågor & Svar</a></li>
-        <li><a href="#">Om Oss</a></li>
-        <li><a href="#">Priser</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
+  <section id="home">
+    <div class="home">
+      <div class="title-text">
+        <h1>Svensktillverkade kök</h1>
+        <h2>Allt startar med ett kostnadsfritt hembesök</h2>
+        <button class="btn">Click</button>
+      </div>
     </div>
-  </header>
-  <main>
-    <section id="home"></section>
-    <section id="steps"></section>
-    <section id="clients"></section>
-    <section id="products"></section>
-  </main>
-  <footer></footer>
+  </section>
+  <section id="steps"></section>
+  <section id="clients"></section>
+  <section id="products"></section>
 </body>
+<footer></footer>
 </html>
