@@ -24,18 +24,22 @@ body {
   position: relative;
 }
 
-h1,
-h2 {
-  color: var(--color-yellow);
-  line-height: 1.6;
-}
-
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
   font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.6;
 }
 
 ul {
@@ -140,13 +144,79 @@ li.logo img {
 .title-text {
   position: absolute;
   bottom: 9vh;
-  margin: 0 11%;
+  margin: 0 8%;
   text-align: center;
   background-color: rgba(25, 117, 215, 0.4);
   box-shadow: 0 2px 10px 8px rgba(25, 117, 215, 0.4);
 }
 
+.title-text h1,
+.title-text h3 {
+  color: var(--color-yellow);
+}
+
 /* steps */
+
+#steps {
+  padding: 25px;
+}
+
+#steps h2 {
+  color: var(--color-blue);
+  margin-bottom: 40px;
+}
+
+.step {
+  position: relative;
+  margin-left: 40px;
+  padding-left: 60px;
+  height: 150px;
+  border-left: 2px dashed var(--color-blue);
+}
+
+.hexagon {
+  position: absolute;
+  left: -40px;
+}
+
+.hex:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-bottom: 22.5px solid var(--color-blue);
+  border-left: 39px solid transparent;
+  border-right: 39px solid transparent;
+  position: absolute;
+  top: -22.5px;
+}
+
+.hex {
+  margin-top: 22.5px;
+  width: 78px;
+  height: 45px;
+  background-color: var(--color-blue);
+  position: relative;
+}
+
+.hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -22.5px;
+  border-top: 22.5px solid var(--color-blue);
+  border-left: 39px solid transparent;
+  border-right: 39px solid transparent;
+}
+
+.hex div {
+  text-align: center;
+  font-size: 2.1rem;
+  color: var(--color-yellow);
+}
+
+.step-text p {
+  color: var(--color-gray-3);
+}
 
 /* clients */
 
@@ -161,10 +231,14 @@ li.logo img {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
     font-size: 2rem;
   }
 
@@ -222,5 +296,6 @@ li.logo img {
 
   .title-text {
     padding: 10px;
+    margin: 0 12%;
   }
 }
