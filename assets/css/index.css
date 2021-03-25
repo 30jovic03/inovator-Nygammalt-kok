@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Sintony&display=swap");
 
 :root {
-  --color-yellow: #f2f817;
+  --color-yellow: #f2f817; /* rgb(242, 248, 23) */
   --color-blue: #1975d7; /* rgb(25, 117, 215) */
 
   --color-gray-1: #f6f8f7;
-  --color-gray-2: #abadb1;
+  --color-gray-2: #aaacb1; /* rgb(171, 173, 177) */
   --color-gray-3: #544d54;
 }
 
@@ -17,7 +17,6 @@
 }
 
 body {
-  /* font-family: $primary-font; */
   line-height: 1.4;
   color: #000;
   font-size: 14px;
@@ -74,10 +73,10 @@ a {
 header {
   height: 10vh;
   position: sticky;
-  /* background-color: var(--color-gray-3); */
   background-color: transparent;
   top: 0;
   z-index: 100;
+  transition: all ease-out 0.5s;
 }
 
 .navbar {
@@ -127,6 +126,7 @@ li.logo img {
 }
 
 /* home */
+
 #home {
   height: 90vh;
 }
@@ -163,7 +163,7 @@ li.logo img {
 
 #steps h2 {
   color: var(--color-blue);
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .step {
@@ -223,6 +223,42 @@ li.logo img {
 /* products */
 
 /* footer */
+
+footer {
+  width: 100%;
+  background-color: var(--color-gray-3);
+  color: var(--color-gray-2);
+  text-align: center;
+  padding-top: 30px;
+}
+
+footer .container div {
+  padding: 10px;
+}
+
+footer a {
+  color: var(--color-gray-1);
+}
+
+footer a:hover {
+  color: var(--color-gray-2);
+}
+
+.copyright {
+  padding-bottom: 1rem;
+}
+.copy {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--color-gray-2);
+}
+.copy::before,
+.copy::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--color-gray-2);
+}
 
 @media screen and (min-width: 992px) {
   .container {
