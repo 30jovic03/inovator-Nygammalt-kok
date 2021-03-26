@@ -220,6 +220,68 @@ li.logo img {
 
 /* clients */
 
+#clients {
+  background: url("/assets/images/client_background.jpg") no-repeat center
+    center/cover;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  color: var(--color-yellow);
+}
+
+.reviews div {
+  padding-bottom: 1rem;
+}
+
+.reviews h2 {
+  color: var(--color-yellow);
+  padding-bottom: 1rem;
+}
+
+.reviews blockquote {
+  background-color: transparent;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 25px 50px 30px;
+  position: relative;
+}
+
+.reviews blockquote:before,
+.reviews blockquote:after {
+  content: "\201C";
+  position: absolute;
+  color: var(--color-yellow);
+  font-size: 50px;
+  font-style: normal;
+}
+
+.reviews blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+
+.reviews blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+
+.reviews img {
+  border-radius: 50%;
+  height: 60px;
+}
+
+.reviews i {
+  color: var(--color-yellow);
+}
+
 /* products */
 
 /* footer */
