@@ -29,6 +29,9 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+  color: var(--color-blue);
+  padding-bottom: 40px;
+  text-align: center;
 }
 
 h3 {
@@ -161,11 +164,6 @@ li.logo img {
   padding: 25px;
 }
 
-#steps h2 {
-  color: var(--color-blue);
-  padding-bottom: 40px;
-}
-
 .step {
   position: relative;
   margin-left: 40px;
@@ -218,11 +216,60 @@ li.logo img {
   color: var(--color-gray-3);
 }
 
+/* products */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  position: relative;
+  background-color: var(--color-blue);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  padding: 0 4%;
+  margin: 20px 2px 30px;
+}
+
+.card .photo {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  position: relative;
+  top: -30px;
+}
+
+.card .photo img {
+  width: 110%;
+  display: block;
+}
+
+.card h3 {
+  color: var(--color-yellow);
+  margin: 10px;
+  font-size: 1.2rem;
+  position: relative;
+  top: -15px;
+}
+
 /* clients */
 
 #clients {
   background: url("/assets/images/client_background.jpg") no-repeat center
     center/cover;
+}
+
+#clients h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: var(--color-yellow);
 }
 
 .reviews {
@@ -234,11 +281,6 @@ li.logo img {
 }
 
 .reviews div {
-  padding-bottom: 1rem;
-}
-
-.reviews h2 {
-  color: var(--color-yellow);
   padding-bottom: 1rem;
 }
 
@@ -282,8 +324,6 @@ li.logo img {
   color: var(--color-yellow);
 }
 
-/* products */
-
 /* footer */
 
 footer {
@@ -306,6 +346,10 @@ footer a:hover {
   color: var(--color-gray-2);
 }
 
+footer i {
+  margin: 0 5px;
+}
+
 .copyright {
   padding-bottom: 1rem;
 }
@@ -322,7 +366,10 @@ footer a:hover {
   border-bottom: 1px solid var(--color-gray-2);
 }
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 576px) {
+} */
+
+@media screen and (min-width: 769px) {
   .container {
     max-width: 1200px;
     margin: auto;
@@ -395,5 +442,54 @@ footer a:hover {
   .title-text {
     padding: 10px;
     margin: 0 12%;
+  }
+
+  /* products */
+
+  .grid {
+    padding-bottom: 70px;
+    grid-column-gap: 30px;
+    grid-row-gap: 70px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 15vw);
+  }
+
+  .card {
+    height: 100%;
+    width: 100%;
+  }
+
+  .card .photo {
+    height: 85%;
+  }
+
+  .card .photo img {
+    height: 110%;
+  }
+
+  .item1 {
+    grid-area: 2/1/4/3;
+  }
+  .item2 {
+    grid-area: 1/1/2/2;
+  }
+  .item3 {
+    grid-area: 2/3/3/4;
+  }
+  .item4 {
+    grid-area: 3/3/5/4;
+  }
+  .item5 {
+    grid-area: 1/2/2/4;
+  }
+  .item6 {
+    grid-area: 4/1/5/2;
+  }
+  .item7 {
+    grid-area: 4/2/5/3;
+  }
+
+  .item4 .photo img {
+    width: 200%;
   }
 }
