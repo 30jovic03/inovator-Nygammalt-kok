@@ -34,7 +34,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  color: var(--color-blue);
+  color: black;
   padding-bottom: 40px;
   text-align: center;
   font-family: var(--primary-font);
@@ -60,7 +60,7 @@ a {
 
 .btn {
   padding: 0.5rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   /* text-transform: uppercase; */
   color: var(--color-blue);
@@ -69,7 +69,7 @@ a {
   /* outline: 2px solid var(--color-blue); */
   /* outline-offset: -2px; */
   /* transition: outline-offset 200ms ease-in; */
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .btn:hover,
@@ -92,8 +92,8 @@ header {
 }
 
 .header-color {
-  background-color: var(--color-gray-2);
-  /* box-shadow: 0 2px 10px 8px var(--color-gray-2); */
+  background-color: rgba(171, 173, 177, 0.9);
+  box-shadow: 0 2px 10px 8px rgba(171, 173, 177, 0.9);
 }
 
 .navbar {
@@ -249,6 +249,11 @@ li.logo img {
 
 /* products */
 
+#products {
+  padding-top: 20px;
+  background-color: var(--color-gray-3);
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -256,38 +261,65 @@ li.logo img {
   padding: 20px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .card {
   position: relative;
-  background-color: var(--color-blue);
+  background-color: var(--color-gray-1);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  padding: 0 4%;
-  margin: 20px 2px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 4%;
+  padding-bottom: 20px;
+  margin: 50px 2px 20px;
 }
 
 .card .photo {
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   width: 100%;
   position: relative;
-  top: -30px;
+  top: -40px;
 }
 
 .card .photo img {
-  width: 110%;
+  width: 100%;
   display: block;
 }
 
 .card h3 {
-  color: var(--color-yellow);
+  color: var(--color-gray-3);
   margin: 10px;
   font-size: 1.2rem;
   position: relative;
   top: -15px;
+}
+
+.card p {
+  color: var(--color-gray-3);
+  margin: 10px;
+}
+
+.item2 {
+  background-color: var(--color-gray-2);
+}
+.item3 .photo {
+  background-color: var(--color-blue);
+}
+.item4 {
+  background-color: var(--color-blue);
+}
+.item4 h3,
+.item4 p {
+  color: var(--color-gray-1);
+}
+.item5 .photo {
+  background-color: var(--color-yellow);
+}
+.item2 h3,
+.item7 h3 {
+  margin-top: 40px;
 }
 
 /* clients */
@@ -407,15 +439,15 @@ footer i {
   }
 
   h1 {
-    font-size: 3.5rem;
-  }
-
-  h2 {
     font-size: 2.5rem;
   }
 
-  h3 {
+  h2 {
     font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
   }
 
   /* header */
@@ -470,14 +502,14 @@ footer i {
 
   /* home */
 
-  .title-text {
+  .main-text {
     padding: 10px;
-    bottom: 8vh;
+    bottom: 9vh;
     margin: 0 10%;
   }
 
   .slide-text {
-    min-width: 1200px;
+    min-width: 840px;
   }
 
   /* products */
@@ -487,23 +519,22 @@ footer i {
     grid-column-gap: 30px;
     grid-row-gap: 70px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 15vw);
   }
 
   .card {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
   }
 
   .card .photo {
-    height: 85%;
+    /* height: 85%; */
   }
 
   .card .photo img {
     height: 110%;
   }
 
-  .item1 {
+  /* .item1 {
     grid-area: 2/1/4/3;
   }
   .item2 {
@@ -527,5 +558,5 @@ footer i {
 
   .item4 .photo img {
     width: 200%;
-  }
+  } */
 }
