@@ -66,16 +66,18 @@ a {
   color: var(--color-blue);
   background-color: var(--color-yellow);
   border: 2px solid var(--color-blue);
-  border-radius: 10px;
   /* outline: 2px solid var(--color-blue); */
   /* outline-offset: -2px; */
   /* transition: outline-offset 200ms ease-in; */
+  border-radius: 10px;
 }
 
 .btn:hover,
 .btn:focus {
   cursor: pointer;
   /* outline-offset: -7px; */
+  background-color: var(--color-blue);
+  color: var(--color-yellow);
 }
 
 /* header */
@@ -172,7 +174,18 @@ li.logo img {
 .main-text h1,
 .main-text h3 {
   color: var(--color-yellow);
+}
+
+.slide-text {
   margin-bottom: 0.5rem;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.current {
+  display: inline;
 }
 
 /* steps */
@@ -461,6 +474,10 @@ footer i {
     padding: 10px;
     bottom: 8vh;
     margin: 0 10%;
+  }
+
+  .slide-text {
+    min-width: 1200px;
   }
 
   /* products */
