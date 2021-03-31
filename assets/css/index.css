@@ -624,6 +624,9 @@ footer i {
 
   .show-review {
     display: flex;
+  }
+
+  .reviews {
     margin: 3%;
   }
 }
