@@ -354,18 +354,21 @@ li.logo img {
 /* clients */
 
 #clients {
-  background: url("/assets/images/client_background.jpg") no-repeat center
-    center/cover;
+  background: linear-gradient(rgba(84, 77, 84, 0.8), rgba(84, 77, 84, 0.8)),
+    url("/assets/images/recenzije-ngk.png") fixed no-repeat;
+  background-size: 320%;
+  background-position-y: 70%;
+  background-position-x: 4%;
 }
 
 #clients h2 {
   padding-top: 20px;
   padding-bottom: 10px;
-  color: var(--color-yellow);
+  color: #fff;
 }
 
 #clients h3 {
-  color: var(--color-yellow);
+  color: #fff;
 }
 
 .reviews {
@@ -373,7 +376,7 @@ li.logo img {
   flex-direction: column;
   align-items: center;
   padding: 2rem 0;
-  color: var(--color-yellow);
+  color: #fff;
 }
 
 .reviews div {
@@ -395,7 +398,7 @@ li.logo img {
 .reviews blockquote:after {
   content: "\201C";
   position: absolute;
-  color: var(--color-yellow);
+  color: #fff;
   font-size: 50px;
   font-style: normal;
 }
@@ -413,6 +416,10 @@ li.logo img {
 
 .reviews i {
   color: var(--color-yellow);
+}
+
+.show-review {
+  display: none;
 }
 
 /* footer */
@@ -595,5 +602,28 @@ footer i {
 
   .card .photo img {
     height: 110%;
+  }
+
+  /* clients */
+
+  #clients {
+    background-size: 100%;
+    background-position-y: 160px;
+    background-position-x: 0;
+    height: 30vw;
+  }
+
+  #clients h2 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  #clients h3 {
+    padding-bottom: 20px;
+  }
+
+  .show-review {
+    display: flex;
+    margin: 3%;
   }
 }
