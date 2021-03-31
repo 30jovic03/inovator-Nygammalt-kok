@@ -36,7 +36,6 @@ h2 {
   font-size: 1.5rem;
   color: black;
   padding-bottom: 40px;
-  text-align: center;
   font-family: var(--primary-font);
 }
 
@@ -48,6 +47,7 @@ h1,
 h2,
 h3 {
   line-height: 1.4;
+  text-align: center;
 }
 
 ul {
@@ -171,7 +171,7 @@ li.logo img {
   top: 0;
   height: 100vh;
   width: 100%;
-  background-image: url("/assets/images/forside-nygammaltkok.jpg");
+  background-image: url("/assets/images/forside-nygammaltkok_slikatop.jpg");
   background-size: cover;
   background-position-x: 33%;
   background-position-y: 63%;
@@ -202,6 +202,10 @@ li.logo img {
 
 .slide.current {
   display: inline;
+}
+
+.main-text .btn {
+  margin: 10px 0;
 }
 
 /* steps */
@@ -273,6 +277,10 @@ li.logo img {
 #products {
   padding-top: 20px;
   background-color: var(--color-gray-3);
+}
+
+#products h2 {
+  color: var(--color-gray-1);
 }
 
 .grid {
@@ -356,6 +364,10 @@ li.logo img {
   color: var(--color-yellow);
 }
 
+#clients h3 {
+  color: var(--color-yellow);
+}
+
 .reviews {
   display: flex;
   flex-direction: column;
@@ -397,11 +409,6 @@ li.logo img {
   content: "\201D";
   right: 20px;
   bottom: 0;
-}
-
-.reviews img {
-  border-radius: 50%;
-  height: 60px;
 }
 
 .reviews i {
@@ -471,6 +478,10 @@ footer i {
     font-size: 1.5rem;
   }
 
+  p {
+    font-size: 1.1rem;
+  }
+
   /* header */
 
   .navbar {
@@ -533,8 +544,7 @@ footer i {
   /* home */
 
   .main-text {
-    padding: 10px;
-    bottom: 9vh;
+    padding: 20px;
     margin: 0 10%;
   }
 
@@ -568,10 +578,6 @@ footer i {
 
   .step-text h3 {
     padding-bottom: 20px;
-  }
-
-  .step-text p {
-    font-size: 1.1rem;
   }
 
   /* products */
