@@ -62,17 +62,17 @@ a {
   padding: 0.5rem 1rem;
   font-size: 1.1rem;
   font-weight: bold;
-  color: var(--color-gray-3);
-  background-color: var(--color-yellow);
-  border: 2px solid var(--color-gray-3);
+  color: var(--color-yellow);
+  background-color: var(--color-gray-3);
+  border: none;
   border-radius: 20px;
 }
 
 .btn:hover,
 .btn:focus {
   cursor: pointer;
-  background-color: var(--color-gray-3);
-  color: var(--color-yellow);
+  background-color: var(--color-yellow);
+  color: var(--color-gray-3);
 }
 
 /* header */
@@ -536,7 +536,7 @@ footer i {
   }
 
   li a:hover {
-    color: var(--color-yellow);
+    color: var(--color-blue);
   }
 
   .active {
@@ -544,7 +544,11 @@ footer i {
   }
 
   .active:hover {
-    border-bottom-color: var(--color-yellow);
+    border-bottom-color: var(--color-blue);
+  }
+
+  .header-color li a:hover {
+    color: var(--color-yellow);
   }
 
   .header-color .active {
