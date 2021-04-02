@@ -138,8 +138,8 @@ li.logo img {
   color: var(--color-gray-1);
 }
 
-.header-color li.icon {
-  color: var(--color-gray-1);
+.header-color li.icon span {
+  background-color: var(--color-gray-1);
 }
 
 .show-menu {
@@ -192,7 +192,7 @@ li.logo img {
   margin: 0 8%;
   padding: 5px;
   text-align: center;
-  background-color: rgba(171, 173, 177, 0.4);
+  background-color: rgba(171, 173, 177, 0.8);
 }
 
 .main-text h1,
@@ -278,6 +278,10 @@ li.logo img {
 
 /* about */
 
+#about {
+  background-color: var(--color-gray-2);
+}
+
 #about .flex {
   display: flex;
 }
@@ -285,6 +289,14 @@ li.logo img {
 .text-about {
   text-align: center;
   padding: 0 5% 5%;
+}
+
+.text-about h2 {
+  padding-top: 30px;
+}
+
+.text-about button {
+  margin: 30px 0 15px;
 }
 
 .photo-about {
@@ -554,7 +566,7 @@ footer i {
   }
 
   li a:hover {
-    color: var(--color-blue);
+    border-bottom: 3px solid var(--color-yellow);
   }
 
   .active {
@@ -562,12 +574,12 @@ footer i {
   }
 
   .active:hover {
-    border-bottom-color: var(--color-blue);
+    border-bottom-color: var(--color-yellow);
   }
 
-  .header-color li a:hover {
+  /* .header-color li a:hover {
     color: var(--color-yellow);
-  }
+  } */
 
   .header-color .active {
     border-bottom: 3px solid var(--color-gray-1);
@@ -620,7 +632,6 @@ footer i {
 
   #about {
     padding: 50px 0;
-    /* background-color: var(--color-gray-2); */
   }
 
   #about .flex {
