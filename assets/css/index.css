@@ -543,6 +543,7 @@ footer i {
 
   li.logo {
     top: -2px;
+    margin-left: 10px;
     margin-right: auto;
     position: relative;
     width: 150px;
