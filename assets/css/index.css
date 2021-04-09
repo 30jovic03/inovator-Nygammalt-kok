@@ -389,9 +389,9 @@ li.logo img {
 
 #clients {
   background: linear-gradient(rgba(84, 77, 84, 0.8), rgba(84, 77, 84, 0.8)),
-    url("/assets/images/recenzije-ngk.png") fixed no-repeat;
+    url("/assets/images/recenzije-ngk.jpg") fixed no-repeat;
   background-size: 320%;
-  background-position-y: 70%;
+  background-position-y: 100%;
   background-position-x: 4%;
 }
 
@@ -503,6 +503,14 @@ footer i {
 
   .grid {
     padding: 3% 20%;
+  }
+
+  /* clients */
+
+  #clients {
+    background-size: 250%;
+    background-position-y: 40%;
+    background-position-x: 0;
   }
 }
 
@@ -659,9 +667,9 @@ footer i {
   /* clients */
 
   #clients {
-    background-size: 120%;
+    background-size: 150%;
     background-position-y: 100%;
-    background-position-x: 10%;
+    background-position-x: 5%;
   }
 
   #clients h2 {
@@ -719,5 +727,13 @@ footer i {
     -ms-transform: scale(1.15); /* IE 9 */
     -o-transform: scale(1.15); /* Opera */
     transform: scale(1.15);
+  }
+
+  /* clients */
+
+  #clients {
+    background-size: 100%;
+    background-position-y: 100%;
+    background-position-x: 0;
   }
 }

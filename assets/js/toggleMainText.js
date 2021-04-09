@@ -1,6 +1,6 @@
 const slides = document.querySelectorAll('.slide');
 const auto = true;
-const intervalTime = 6000;
+const intervalTime = 5000;
 let slideInterval;
 
 const nextSlide = () => {
