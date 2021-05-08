@@ -828,7 +828,7 @@ footer i {
 
 .products-img::before {
   content: "";
-  padding-top: 50%;
+  padding-top: 70%;
   display: block;
 }
 
