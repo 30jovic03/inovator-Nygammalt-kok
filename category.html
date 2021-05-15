@@ -5,17 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./assets/css/index.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="/assets/splide-2.4.21/dist/css/splide.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/index.css" />
 
   <script defer src="./assets/js/toggleMenu.js"></script>
   <script defer src="./assets/js/changeHeaderColor.js"></script>
-  
-  <script src="/assets/splide-2.4.21/dist/js/splide.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script defer src="./assets/js/carousel.js"></script>
 
   <title>Nygammalt kök products</title>
@@ -88,79 +83,38 @@
     <div class="container">
       <h3>Fräsningar</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque corrupti, odit atque error fugiat.</p>
-      <div class="splide">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <div class="slider-image">
-                  <img src="/assets/images/Angola-Black-300x300.jpg" />
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="slider-image">
-                <img src="/assets/images/Angola-Black-300x300.jpg" />
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="slider-image">
-                <img src="/assets/images/Angola-Black-300x300.jpg" />
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="slider-image">
-                <img src="/assets/images/Bankskiver.png" />
-              </div>
-            </li>
-            <li class="splide__slide">
-              <div class="slider-image">
-                <img src="/assets/images/fake-person.jpg" />
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="scrolly">
-        <button id="left"><span class="material-icons">chevron_left</span></button>
-        <button id="right"><span class="material-icons">chevron_right</span></button>
-        <ul class="carouselPre">
-          <li class="itemsC">
-            <div class="bgImg"><img src="/assets/images/Angola-Black-300x300.jpg" alt="image" srcset=""></div>
-          </li>
-          <li class="itemsC">
-            <div class="bgImg"><img src="/assets/images/Angola-Black-300x300.jpg" alt="image" srcset=""></div>
-          </li>
-          <li class="itemsC">
-            <div class="bgImg"><img src="/assets/images/Angola-Black-300x300.jpg" alt="image" srcset=""></div>
-          </li>
-          <li class="itemsC">
-            <div class="bgImg"><img src="/assets/images/Angola-Black-300x300.jpg" alt="image" srcset=""></div>
-          </li>
-          <li class="itemsC">
-            <div class="bgImg"><img src="/assets/images/Angola-Black-300x300.jpg" alt="image" srcset=""></div>
-          </li>
-          <li class="itemsC">
-            <div class="bgImg"><img src="/assets/images/fake-person.jpg" alt="image" srcset=""></div>
-          </li>
-          <li class="itemsC">
-            <div class="bgImg"><img src="/assets/images/Angola-Black-300x300.jpg" alt="image" srcset=""></div>
-          </li>
-          <li class="itemsC">
-            <div class="bgImg"><img src="/assets/images/fake-person.jpg" alt="image" srcset=""></div>
-          </li>
-        </ul>
+      <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="item-image col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#"><img src="/assets/images/Angola-Black-300x300.jpg" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="item-image col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#"><img src="/assets/images/Angola-Black-300x300.jpg" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="item-image col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#"><img src="/assets/images/Angola-Black-300x300.jpg" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="item-image col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#"><img src="/assets/images/Angola-Black-300x300.jpg" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="item-image col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#"><img src="/assets/images/Angola-Black-300x300.jpg" class="img-responsive"></a></div>
+          </div>
+          <div class="item">
+            <div class="item-image col-lg-3 col-md-4 col-sm-6 col-xs-12"><a href="#"><img src="/assets/images/Angola-Black-300x300.jpg" class="img-responsive"></a></div>
+          </div>
+          </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <script>
-    new Splide( '.splide', {
-      type   : 'loop',
-      perPage: 4,
-      perMove: 1,
-      pagination: false,
-    } ).mount();
-  </script>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 <footer>
   <div class="container">
