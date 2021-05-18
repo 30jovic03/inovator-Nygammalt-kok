@@ -5,8 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/utilities.css" />
+  <link rel="stylesheet" href="./assets/css/products-and-categories.css" />
 
   <script defer src="./assets/js/toggleMenu.js"></script>
   <script defer src="./assets/js/changeHeaderColor.js"></script>
@@ -15,13 +17,13 @@
 </head>
 <header id="header">
   <div class="container">
-    <ul class="navbar" id="main-navbar">
-      <li class="icon">
+    <ul class="my-navbar" id="main-navbar">
+      <li class="my-nav-icon">
         <span></span>
         <span></span>
         <span></span>
       </li>
-      <li class="logo">
+      <li class="my-logo">
         <a href="/index.html">
           <img src="./assets/images/nygammaltkok-loggo-50.jpg" alt="logo" />
         </a>
@@ -38,63 +40,65 @@
 </header>
 <body>
   <section id="products-list">
-    <div class="container flex">
-      <div class="products-group">
-        <a href="/category.html">
-          <div class="products-image">
-            <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
-            <h3>Köksluckor</h3>
-          </div>
-        </a>
-      </div>
-      <div class="products-group">
-        <a href="#">
-          <div class="products-image">
-            <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
-            <h3>Kökslådor</h3>
-          </div>
-        </a>
-      </div>
-      <div class="products-group">
-        <a href="#">
-          <div class="products-image">
-            <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
-            <h3>Kökshandtag</h3>
-          </div>
-        </a>
-      </div>
-      <div class="products-group">
-        <a href="#">
-          <div class="products-image">
-            <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
-            <h3>Bänkskivor</h3>
-          </div>
-        </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-3 products-group">
+          <a href="/category.html">
+            <div class="products-image">
+              <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
+              <h3>Köksluckor</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3 products-group">
+          <a href="#">
+            <div class="products-image">
+              <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
+              <h3>Kökslådor</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3 products-group">
+          <a href="#">
+            <div class="products-image">
+              <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
+              <h3>Kökshandtag</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3 products-group">
+          <a href="#">
+            <div class="products-image">
+              <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
+              <h3>Bänkskivor</h3>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
   <section id="products-header">
-    <div class="container">
-      <h1>PRODUKTER</h1>
-      <div class="products-text flex">
-        <p>Nygammaltkök samarbetar med de bästa.
+    <div class="container px-0">
+      <h1 class="pt-5 mt-1 mb-0 text-center">PRODUKTER</h1>
+      <div class="products-text row mx-0 mb-1 py-2">
+        <p class="col-md-6 px-4 py-2">Nygammaltkök samarbetar med de bästa.
           Med luckor i 19 mm tjocklek får vi formstabilitet och hållbarhet.
           Med gångjärn från Blum får vi beslag som håller livet ut
           Med handtag & knoppar från Beslag o design har vi 3000 handtag att välja mellan
           Med egen tillverkning av dämpade lådor får vi högst kvalitet per betald krona.</p>
-        <p>Hos Nygammaltkök får du som kund en helhet på din köksrenovering som gör att du inte behöver gå till olika aktörer för att få klart ditt kök. Således kan du med trygghet komma till oss om du inte bara ska byta dina köksluckor hos oss men samtidigt bland annat.</p>
+        <p class="col-md-6 px-4 py-2">Hos Nygammaltkök får du som kund en helhet på din köksrenovering som gör att du inte behöver gå till olika aktörer för att få klart ditt kök. Således kan du med trygghet komma till oss om du inte bara ska byta dina köksluckor hos oss men samtidigt bland annat.</p>
       </div>
     </div>
   </section>
   <section id="products-description">
-    <div class="container">
-      <div class="products-group-desc">
-        <div class="products-img">
+    <div class="container px-0 mb-1">
+      <div class="d-flex flex-column flex-lg-row">
+        <div class="products-img col-lg-6">
           <div class="products-image">
             <img src="/assets/images/KÖKSLUCKOR.png" />
           </div>
         </div>
-        <div class="products-desc">
+        <div class="p-4 col-lg-6 d-flex flex-column text-center align-items-center text-lg-start align-items-lg-start justify-content-center">
           <h2>Köksluckor</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta voluptatum eligendi.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio expedita quo soluta! Cupiditate optio doloremque, magnam voluptate architecto excepturi cumque quidem, quo quae perspiciatis mollitia, laudantium vitae nisi exercitationem dolore.
@@ -106,13 +110,13 @@
           </div>
         </div>
       </div>
-      <div class="products-group-desc reverse-flex">
-        <div class="products-img">
+      <div class="d-flex flex-column flex-lg-row-reverse">
+        <div class="products-img col-lg-6">
           <div class="products-image">
             <img src="/assets/images/KÖKSLÅDOR.png" />
           </div>
         </div>
-        <div class="products-desc">
+        <div class="p-4 col-lg-6 d-flex flex-column text-center align-items-center text-lg-end align-items-lg-end justify-content-center">
           <h2>Kökslådor</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta voluptatum eligendi.</p>
           <div class="my-button">
@@ -122,13 +126,13 @@
           </div>
         </div>
       </div>
-      <div class="products-group-desc">
-        <div class="products-img">
+      <div class="d-flex flex-column flex-lg-row">
+        <div class="products-img col-lg-6">
           <div class="products-image">
             <img src="/assets/images/KÖKSHANDTAG.png" />
           </div>
         </div>
-        <div class="products-desc">
+        <div class="p-4 col-lg-6 d-flex flex-column text-center align-items-center text-lg-start align-items-lg-start justify-content-center">
           <h2>Kökshandtag</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta voluptatum eligendi.</p>
           <div class="my-button">
@@ -138,13 +142,13 @@
           </div>
         </div>
       </div>
-      <div class="products-group-desc reverse-flex">
-        <div class="products-img">
+      <div class="d-flex flex-column flex-lg-row-reverse">
+        <div class="products-img col-lg-6">
           <div class="products-image">
             <img src="/assets/images/Bankskiver.png" />
           </div>
         </div>
-        <div class="products-desc">
+        <div class="p-4 col-lg-6 d-flex flex-column text-center align-items-center text-lg-end align-items-lg-end justify-content-center">
           <h2>Bänkskivor</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dicta voluptatum eligendi.</p>
           <div class="my-button">
@@ -156,12 +160,32 @@
       </div>
     </div>
   </section>
+  <section id="products-desc-text">
+    <div class="container px-0">
+      <h2 class="pt-5 mt-1 mb-0 text-center">More text</h2>
+      <div class="text-center row mx-0 mb-1 py-2">
+        <p class="col-md-6 px-4 py-2">Nygammaltkök samarbetar med de bästa.
+          Med luckor i 19 mm tjocklek får vi formstabilitet och hållbarhet.
+          Med gångjärn från Blum får vi beslag som håller livet ut
+          Med handtag & knoppar från Beslag o design har vi 3000 handtag att välja mellan
+          Med egen tillverkning av dämpade lådor får vi högst kvalitet per betald krona.</p>
+        <p class="col-md-6 px-4 py-2">Hos Nygammaltkök får du som kund en helhet på din köksrenovering som gör att du inte behöver gå till olika aktörer för att få klart ditt kök. Således kan du med trygghet komma till oss om du inte bara ska byta dina köksluckor hos oss men samtidigt bland annat.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 <footer>
-  <div class="container">
-    <div>Nygammalt Kök Sverige AB | Adress: Silvåkragatan 62, 254 58 Helsingborg | Telefon: <a href="tel: 040 510 540">040-510 540</a> | Email: <a href="#">info@nygammaltkok.se</a> | <a href="#"><i class="fab fa-instagram"></i></a>  <a href="#"><i class="fab fa-facebook-square"></i></a></div>
-    <div><a href="https://nygammaltkok.se/integritetspolicy-2/">INTEGRITETSPOLICY</a> | <a href="http://inovator.dk/" target="_blank">Developed by Inovator</a></div>
-    <div class="copyright">
+  <div class="pt-3 text-center">
+    <div class="p-2">Nygammalt Kök Sverige AB | Adress: Silvåkragatan 62, 254 58 Helsingborg | Telefon: <a href="tel: 040 510 540">040-510 540</a> | Email: <a href="#">info@nygammaltkok.se</a></div>
+    <div class="p-2">
+      <a href="#"><i class="fab fa-instagram mx-2 fs-2"></i></a>
+      <a href="#"><i class="fab fa-facebook-square mx-2 fs-2"></i></a>
+    </div>
+    <div class="p-2"><a href="https://nygammaltkok.se/integritetspolicy-2/">INTEGRITETSPOLICY</a> | <a href="http://inovator.dk/" target="_blank">Developed by Inovator</a></div>
+    <div class="copyright px-4 pt-2 pb-3">
       <div class="copy"><script>document.write(new Date().getFullYear())</script>&copy ALL RIGHTS RESERVED</div>
     </div>
   </div>

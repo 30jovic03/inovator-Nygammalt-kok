@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="./assets/css/utilities.css" />
+  <link rel="stylesheet" href="./assets/css/products-and-categories.css" />
 
   <script defer src="./assets/js/toggleMenu.js"></script>
   <script defer src="./assets/js/changeHeaderColor.js"></script>
@@ -16,14 +17,14 @@
   <title>Nygammalt kök products</title>
 </head>
 <header id="header">
-  <div class="my-container">
-    <ul class="navbar" id="main-navbar">
-      <li class="icon">
+  <div class="container">
+    <ul class="my-navbar" id="main-navbar">
+      <li class="my-nav-icon">
         <span></span>
         <span></span>
         <span></span>
       </li>
-      <li class="logo">
+      <li class="my-logo">
         <a href="/index.html">
           <img src="./assets/images/nygammaltkok-loggo-50.jpg" alt="logo" />
         </a>
@@ -40,58 +41,60 @@
 </header>
 <body>
   <section id="products-list">
-    <div class="my-container flex">
-      <div class="products-group">
-        <a href="#">
-          <div class="products-image active-category">
-            <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
-            <h3>Köksluckor</h3>
-          </div>
-        </a>
-      </div>
-      <div class="products-group">
-        <a href="#">
-          <div class="products-image">
-            <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
-            <h3>Kökslådor</h3>
-          </div>
-        </a>
-      </div>
-      <div class="products-group">
-        <a href="#">
-          <div class="products-image">
-            <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
-            <h3>Kökshandtag</h3>
-          </div>
-        </a>
-      </div>
-      <div class="products-group">
-        <a href="#">
-          <div class="products-image">
-            <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
-            <h3>Bänkskivor</h3>
-          </div>
-        </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-lg-3 products-group">
+          <a href="/category.html">
+            <div class="products-image active-category">
+              <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
+              <h3>Köksluckor</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3 products-group">
+          <a href="#">
+            <div class="products-image">
+              <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
+              <h3>Kökslådor</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3 products-group">
+          <a href="#">
+            <div class="products-image">
+              <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
+              <h3>Kökshandtag</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-3 products-group">
+          <a href="#">
+            <div class="products-image">
+              <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="product image">
+              <h3>Bänkskivor</h3>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
   <section id="category-header">
-    <div class="my-container">
-      <h1>Köksluckor</h1>
-      <div class="products-text flex">
-        <p class="text-xs-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque non voluptatum earum vel dolore consequuntur quidem exercitationem corporis, magni mollitia in alias facere repellat libero nesciunt doloribus tenetur amet recusandae.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque non voluptatum earum vel dolore consequuntur quidem exercitationem corporis, magni mollitia in alias facere repellat libero nesciunt doloribus tenetur amet recusandae.</p>
+    <div class="container px-0">
+      <h1 class="pt-5 mt-1 mb-0 text-center text-uppercase">Köksluckor</h1>
+      <div class="text-center row mx-0 mb-1 py-2">
+        <p class="col-md-6 px-4 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque non voluptatum earum vel dolore consequuntur quidem exercitationem corporis, magni mollitia in alias facere repellat libero nesciunt doloribus tenetur amet recusandae.</p>
+        <p class="col-md-6 px-4 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque non voluptatum earum vel dolore consequuntur quidem exercitationem corporis, magni mollitia in alias facere repellat libero nesciunt doloribus tenetur amet recusandae.</p>
       </div>
     </div>
   </section>
   <section id="category-slider">
-    <div class="my-container">
-      <h3>Fräsningar</h3>
+    <div class="container px-0">
+      <h3 class="pt-5 mt-1 mb-0 text-uppercase">Fräsningar</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque corrupti, odit atque error fugiat.</p>
 
-      <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+      <div id="MyCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="item active">
+          <div class="carousel-item active">
             <div class="item-image col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <a href="#">
                 <img src="/assets/images/KÖKSHANDTAG.png" class="img-responsive">
@@ -102,18 +105,7 @@
               </a>
             </div>
           </div>
-          <div class="item">
-            <div class="item-image col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <a href="#">
-                <img src="/assets/images/KÖKSHANDTAG.png" class="img-responsive">
-                <div class="item-text">
-                  <h3 style="text-align: center;">HEADING HERE</h3>
-                  <p style="text-align: center; padding-top: 10px;">Description goes here</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="item">
+          <div class="carousel-item">
             <div class="item-image col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <a href="#">
                 <img src="/assets/images/Angola-Black-300x300.jpg" class="img-responsive">
@@ -124,18 +116,7 @@
               </a>
             </div>
           </div>
-          <div class="item">
-            <div class="item-image col-lg-3 col-md-4 col-sm-6 col-xs-12">
-              <a href="#">
-                <img src="/assets/images/KÖKSHANDTAG.png" class="img-responsive">
-                <div class="item-text">
-                  <h3 style="text-align: center;">HEADING HERE</h3>
-                  <p style="text-align: center; padding-top: 10px;">Description goes here</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="item">
+          <div class="carousel-item">
             <div class="item-image col-lg-3 col-md-4 col-sm-6 col-xs-12">
               <a href="#">
                 <img src="/assets/images/Angola-Black-300x300.jpg" class="img-responsive">
@@ -146,23 +127,42 @@
               </a>
             </div>
           </div>
-          </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+          <div class="carousel-item">
+            <div class="item-image col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <a href="#">
+                <img src="/assets/images/KÖKSHANDTAG.png" class="img-responsive">
+                <div class="item-text">
+                  <h3 style="text-align: center;">HEADING HERE</h3>
+                  <p style="text-align: center; padding-top: 10px;">Description goes here</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#MyCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-angle-left"></i></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#MyCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-angle-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </section>
 
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 <footer>
-  <div class="my-container">
-    <div>Nygammalt Kök Sverige AB | Adress: Silvåkragatan 62, 254 58 Helsingborg | Telefon: <a href="tel: 040 510 540">040-510 540</a> | Email: <a href="#">info@nygammaltkok.se</a> | <a href="#"><i class="fab fa-instagram"></i></a>  <a href="#"><i class="fab fa-facebook-square"></i></a></div>
-    <div><a href="https://nygammaltkok.se/integritetspolicy-2/">INTEGRITETSPOLICY</a> | <a href="http://inovator.dk/" target="_blank">Developed by Inovator</a></div>
-    <div class="copyright">
+  <div class="pt-3 text-center">
+    <div class="p-2">Nygammalt Kök Sverige AB | Adress: Silvåkragatan 62, 254 58 Helsingborg | Telefon: <a href="tel: 040 510 540">040-510 540</a> | Email: <a href="#">info@nygammaltkok.se</a></div>
+    <div class="p-2">
+      <a href="#"><i class="fab fa-instagram mx-2 fs-2"></i></a>
+      <a href="#"><i class="fab fa-facebook-square mx-2 fs-2"></i></a>
+    </div>
+    <div class="p-2"><a href="https://nygammaltkok.se/integritetspolicy-2/">INTEGRITETSPOLICY</a> | <a href="http://inovator.dk/" target="_blank">Developed by Inovator</a></div>
+    <div class="copyright px-4 pt-2 pb-3">
       <div class="copy"><script>document.write(new Date().getFullYear())</script>&copy ALL RIGHTS RESERVED</div>
     </div>
   </div>
