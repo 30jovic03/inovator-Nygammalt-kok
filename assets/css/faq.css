@@ -1,0 +1,68 @@
+#faq-header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 40px;
+}
+
+.faq-card {
+  width: 90%;
+  text-align: center;
+  border: 1px solid var(--color-gray-2);
+}
+
+.faq-card h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.faq-card .no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* faq-accordion */
+
+.accordion-header {
+  height: 60px;
+}
+
+.accordion-button {
+  color: var(--color-gray-3);
+  background-color: var(--color-gray-2);
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  color: var(--color-gray-3);
+  background-color: var(--color-gray-2);
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  display: none;
+}
+.accordion-button:not(.collapsed)::after {
+  display: none;
+}
+
+.accordion-button span {
+  margin-left: auto;
+  font-size: 30px;
+}
+.accordion-button span::after {
+  content: "+";
+}
+.accordion-button:not(.collapsed) span::after {
+  content: "\2212";
+}
+
+.accordion-body {
+  color: var(--color-gray-3);
+  background-color: var(--color-yellow);
+}
+
+@media screen and (min-width: 768px) {
+  .faq-card {
+    width: 100%;
+  }
+}

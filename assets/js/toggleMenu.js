@@ -9,7 +9,7 @@
 //   }
 // }
 
-const hamburger = document.querySelector(".icon");
+const hamburger = document.querySelector(".my-nav-icon");
 const nav = document.getElementById("main-navbar");
 
 hamburger.addEventListener("click", () => {
