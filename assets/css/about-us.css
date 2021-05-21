@@ -85,6 +85,10 @@
 
 /* about-contact */
 
+.about-contact {
+  background-color: var(--color-gray-2);
+}
+
 .map-image {
   width: 100%;
 }
