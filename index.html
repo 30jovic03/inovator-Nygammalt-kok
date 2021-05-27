@@ -5,8 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" href="./assets/css/utilities.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
 
   <script defer src="./assets/js/toggleMenu.js"></script>
   <script defer src="./assets/js/changeHeaderColor.js"></script>
@@ -15,14 +18,14 @@
   <title>Nygammalt kök</title>
 </head>
 <header id="header">
-  <div class="container">
-    <ul class="navbar" id="main-navbar">
-      <li class="icon">
+  <div class="container my-container">
+    <ul class="my-navbar" id="main-navbar">
+      <li class="my-nav-icon">
         <span></span>
         <span></span>
         <span></span>
       </li>
-      <li class="logo">
+      <li class="my-logo">
         <a href="/index.html">
           <img src="./assets/images/nygammaltkok-loggo-50.jpg" alt="logo" />
         </a>
@@ -40,75 +43,81 @@
 <body>
   <section id="home">
     <div class="home">
-      <div class="container">
-        <div class="main-text">
-          <div class="slide-text">
-            <div class="my-slide current">
-              <h1>Från Dröm til färdigt kök till ett fair pris</h1>
-              <h3>alla typer av köksrenoveringar, köksluckor, bänkskivor och lådor</h3>
-            </div>
-            <div class="my-slide">
-              <h1>Köksrenovering – enklere, snabbere og billigare</h1>
-              <h3>Boka kostnatsfrit hembesök – första steget till ett nytt kök</h3>
-            </div>
+      <div class="home-text d-flex flex-column align-items-center text-center mx-auto p-3">
+        <div class="slide-text">
+          <div class="my-slide current">
+            <h1>Från Dröm til färdigt kök till ett fair pris</h1>
+            <h3>alla typer av köksrenoveringar, köksluckor, bänkskivor och lådor</h3>
           </div>
-          <div class="my-button">
-            <button>
-              <span>Boka hembesök</span>
-            </button>
+          <div class="my-slide">
+            <h1>Köksrenovering – enklere, snabbere og billigare</h1>
+            <h3>Boka kostnatsfrit hembesök – första steget till ett nytt kök</h3>
           </div>
+        </div>
+        <div class="my-button">
+          <button>
+            <span>Boka hembesök</span>
+          </button>
         </div>
       </div>
     </div>
   </section>
   <section id="steps">
-    <h2>Så går det till...</h2>
-    <div class="container flex">
-      <div class="step">
-        <div class="hexagon">
-          <div class="hex">
-            <div>
-              <i class="far fa-edit"></i>
+    <div class="container px-0">
+      <h2 class="text-center mb-5">Så går det till...</h2>
+      <div class="row ps-4 pe-3 mb-3 pt-lg-5">
+        <div class="col-xs-12 col-lg-4 p-lg-0">
+          <div class="step pt-lg-5 px-lg-0">
+            <div class="hexagon">
+              <div class="hex">
+                <div>
+                  <i class="far fa-edit"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text-center px-lg-4">
+              <h3 class="py-lg-3">Hembesök</h3>
+              <p>Kontakta oss idag så kommer vi hem till dig för ett gratis kostnadsförslag. Vi kan hjälpa dig med tips och idéer för att skapa ditt drömkök och går gemensamt igenom dina behov för det nya köket.</p>
             </div>
           </div>
         </div>
-        <div class="step-text">
-          <h3>Hembesök</h3>
-          <p>Kontakta oss idag så kommer vi hem till dig för ett gratis kostnadsförslag. Vi kan hjälpa dig med tips och idéer för att skapa ditt drömkök och går gemensamt igenom dina behov för det nya köket.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="hexagon">
-          <div class="hex">
-            <div>
-              <i class="fa fa-tools"></i>
+        <div class="col-xs-12 col-lg-4 p-lg-0">
+          <div class="step pt-lg-5 px-lg-0">
+            <div class="hexagon">
+              <div class="hex">
+                <div>
+                  <i class="fa fa-tools"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text-center px-lg-4">
+              <h3 class="py-lg-3">Tilverkning</h3>
+              <p>Vår leverantör producerar dina köksluckor helt anpassade efter ditt kök och dina behov.</p>
             </div>
           </div>
         </div>
-        <div class="step-text">
-          <h3>Tilverkning</h3>
-          <p>Vår leverantör producerar dina köksluckor helt anpassade efter ditt kök och dina behov.</p>
-        </div>
-      </div>
-      <div class="step" style="border-left: none;">
-        <div class="hexagon">
-          <div class="hex">
-            <div>
-              <i class="fa fa-truck"></i>
+        <div class="col-xs-12 col-lg-4 p-lg-0">
+          <div class="step pt-lg-5 px-lg-0" style="border-left: none;">
+            <div class="hexagon">
+              <div class="hex">
+                <div>
+                  <i class="fa fa-truck"></i>
+                </div>
+              </div>
+            </div>
+            <div class="text-center px-lg-4">
+              <h3 class="py-lg-3">Montering</h3>
+              <p>När köksluckorna är färdigproducerade kommer vi hem och monterar dem och du kan göra dig redo för att laga mat i ditt nya drömkök.</p>
             </div>
           </div>
-        </div>
-        <div class="step-text">
-          <h3>Montering</h3>
-          <p>När köksluckorna är färdigproducerade kommer vi hem och monterar dem och du kan göra dig redo för att laga mat i ditt nya drömkök.</p>
-        </div>
+        </div>        
       </div>
     </div>
   </section>
   <section id="about">
-    <div class="flex">
-      <div class="text-about">
-        <h2>Proffs på köksrenoveringar</h2>
+    <div class="row d-flex flex-column flex-lg-row-reverse m-0">
+      <div class="text-about d-flex flex-column align-items-center justify-content-center text-center col-12 col-lg-5 p-4 p-lg-2 p-xl-4">
+        <h2 class="py-4 py-lg-1 py-xl-4">Proffs på köksrenoveringar</h2>
         <p>Hos Nygammalt Kök är du i trygga & kompetenta händer. Vi har renoverat kök sedan 1998 och vi har Sveriges största urval av köksluckor och bänkskivo. Kundvänlighet - vi lyssnar på dina önskemål och är främst en medspelare i dina val av individuella kökslösningar.</p>
         <div class="my-button">
           <button>
@@ -116,129 +125,145 @@
           </button>
         </div>
       </div>
-      <div class="photo-about">
-        <img src="/assets/images/About-ngk.png" alt="about us image" />
+      <div class="photo-about overflow-hidden col-12 col-lg-7 p-0">
+        <img src="/assets/images/About-ngk.png" class="img-fluid w-100" alt="about us image" />
       </div>
     </div>
   </section>
   <section id="products">
-    <h2>Produkter</h2>
-    <div class="container grid">
-      <div class="col">
-        <a href="#">
-          <div class="card item1">
-            <div class="photo">
-              <img src="/assets/images/skåpslösningar.JPG" alt="kitchen" />
+    <h2 class="text-center pt-5">Produkter</h2>
+    <div class="container">
+      <div class="row align-items-center pb-4">
+        <div class="col-12 col-md-4">
+          <a href="#">
+            <div class="card item1">
+              <div class="photo">
+                <img src="/assets/images/skåpslösningar.JPG" class="w-100"/>
+              </div>
+              <h3>Praktiska skåpslösningar</h3>
+              <p>Varför inte montera en modern sopsortering i vaskskåpet? En ny hörnkarusell eller ett skafferiutdrag? Vi har det hela!</p>
             </div>
-            <h3>Praktiska skåpslösningar</h3>
-            <p>Varför inte montera en modern sopsortering i vaskskåpet? En ny hörnkarusell eller ett skafferiutdrag? Vi har det hela!</p>
-          </div>
-        </a>
-        <a href="#">
-          <div class="card item4">
-            <div class="photo">
-              <img src="/assets/images/IMG1146_AA_FOT_FO_BAU_-SALL_-AMC_-V1_TableImageLarge.jpg" alt="kitchen" />
+          </a>
+          <a href="#">
+            <div class="card item4">
+              <div class="photo">
+                <img src="/assets/images/IMG1146_AA_FOT_FO_BAU_-SALL_-AMC_-V1_TableImageLarge.jpg" class="w-100"/>
+              </div>
+              <h3>Kökslådor</h3>
+              <p>Våra beslag passar in i ett stort antal monteringssituationer och kan bearbetas och monteras med största precision. Utdragssystem och fyra olika öppnings- och dämpningsfunktioner bidrar till funktionella och användarvänliga lösningar i bl.a. köket.</p>
             </div>
-            <h3>Kökslådor</h3>
-            <p>Våra beslag passar in i ett stort antal monteringssituationer och kan bearbetas och monteras med största precision. Utdragssystem och fyra olika öppnings- och dämpningsfunktioner bidrar till funktionella och användarvänliga lösningar i bl.a. köket.</p>
-          </div>
-        </a>
-      </div>
-      <div class="col">
-        <a href="#">
-          <div class="card item2">
-            <h3>Nytt kök - allt på ett ställe</h3>
-            <p>
-              Vi byter luckorna, byts även delar som passbitar, ljusrampslister och täcksidor ut till samma material och färg som luckorna. Varför inte montera en modern sopsortering i vaskskåpet? En ny hörnkarusell eller ett skafferiutdrag? Vi har det hela!
-            </p>
-          </div>
-        </a>
-        <a href="#">
-          <div class="card item5">
-            <div class="photo">
-              <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" alt="kitchen" />
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a href="#">
+            <div class="card item2">
+              <h3>Nytt kök - allt på ett ställe</h3>
+              <p>
+                Vi byter luckorna, byts även delar som passbitar, ljusrampslister och täcksidor ut till samma material och färg som luckorna. Varför inte montera en modern sopsortering i vaskskåpet? En ny hörnkarusell eller ett skafferiutdrag? Vi har det hela!
+              </p>
             </div>
-            <h3>Kökshandtag</h3>
-            <p>Med handtag & knoppar från Beslag o design har vi 3000 handtag att välja mellan.</p>
-          </div>
-        </a>
-        <a href="#">
-          <div class="card item7">
-            <h3>Välja Nygammaltkök som din leverantör</h3>
-            <p>Med egen tillverkning av dämpade lådor får vi högst kvalitet per betald krona.</p>
-          </div>
-        </a>
-      </div>
-      <div class="col">
-        <a href="#">
-          <div class="card item3">
-            <div class="photo">
-              <img src="/assets/images/kokslucka-meny-vit-bankskap.png" alt="kitchen" />
+          </a>
+          <a href="#">
+            <div class="card item5">
+              <div class="photo">
+                <img src="/assets/images/avio-lader-loop-laderogla-med-som.png" class="w-100" />
+              </div>
+              <h3>Kökshandtag</h3>
+              <p>Med handtag & knoppar från Beslag o design har vi 3000 handtag att välja mellan.</p>
             </div>
-            <h3>Marknadens bästa köksluckor</h3>
-            <p>De bästa producenterna både nationellt och internationellt.  Luckor och fronter tillverkas måttbeställda med millimeterprecision och fås i en uppsjö av färger och utseende.</p>
-          </div>
-        </a>
-        <a href="#">
-          <div class="card item6">
-            <div class="photo">
-              <img src="/assets/images/Angola-Black-300x300.jpg" alt="kitchen" />
+          </a>
+          <a href="#">
+            <div class="card item7">
+              <h3>Välja Nygammaltkök som din leverantör</h3>
+              <p>Med egen tillverkning av dämpade lådor får vi högst kvalitet per betald krona.</p>
             </div>
-            <h3>Bänkskivor</h3>
-            <p>Vi har Sveriges största urval av köksluckor och bänkskivor. Bänkskivor i sten & granit, ett av det mest populära valet av bänkskiva, Allt blir levererat "skräddarsytt", färdigt för montage.</p>
-          </div>
-        </a>
+          </a>
+        </div>
+        <div class="col-12 col-md-4">
+          <a href="#">
+            <div class="card item3">
+              <div class="photo">
+                <img src="/assets/images/kokslucka-meny-vit-bankskap.png" class="w-100" />
+              </div>
+              <h3>Marknadens bästa köksluckor</h3>
+              <p>De bästa producenterna både nationellt och internationellt.  Luckor och fronter tillverkas måttbeställda med millimeterprecision och fås i en uppsjö av färger och utseende.</p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="card item6">
+              <div class="photo">
+                <img src="/assets/images/Angola-Black-300x300.jpg" class="w-100" />
+              </div>
+              <h3>Bänkskivor</h3>
+              <p>Vi har Sveriges största urval av köksluckor och bänkskivor. Bänkskivor i sten & granit, ett av det mest populära valet av bänkskiva, Allt blir levererat "skräddarsytt", färdigt för montage.</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
   <section id="clients">
-    <h2>Vad säger våra kunder?</h2>
-    <h3>Omdömen om Nygammaltkök i Skåne</h3>
-    <div class="container flex">
-      <div class="reviews">
-        <blockquote>Allt funkade perfekt, vi har fått bra och proffsig hjälp och arbetet blev snabbt genomfört. Vi är supernöjda med vårt nya kök med en modern design och bra kvalitet till ett rimligt pris. Kan verkligen rekommendera.
-        </blockquote>
-        <p>Esper N.</p>
-        <div>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
+    <h2 class="text-center px-3 pt-5 pb-4">Vad säger våra kunder?</h2>
+    <h3 class="text-center px-3">Omdömen om Nygammaltkök i Skåne</h3>
+    <div class="container px-0 py-4">
+      <div class="row">
+        <div class="reviews col-12 col-lg-4">
+          <div class="d-flex flex-column align-items-center">
+            <blockquote>Allt funkade perfekt, vi har fått bra och proffsig hjälp och arbetet blev snabbt genomfört. Vi är supernöjda med vårt nya kök med en modern design och bra kvalitet till ett rimligt pris. Kan verkligen rekommendera.
+            </blockquote>
+            <p>Esper N.</p>
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="reviews show-review">
-        <blockquote>Allt funkade perfekt, vi har fått bra och proffsig hjälp och arbetet blev snabbt genomfört. Vi är supernöjda med vårt nya kök med en modern design och bra kvalitet till ett rimligt pris. Kan verkligen rekommendera.
-        </blockquote>
-        <p>Esper N.</p>
-        <div>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
+        <div class="reviews show-review col-12 col-lg-4">
+          <div class="d-flex flex-column align-items-center">
+            <blockquote>Allt funkade perfekt, vi har fått bra och proffsig hjälp och arbetet blev snabbt genomfört. Vi är supernöjda med vårt nya kök med en modern design och bra kvalitet till ett rimligt pris. Kan verkligen rekommendera.
+            </blockquote>
+            <p>Esper N.</p>
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="reviews show-review">
-        <blockquote>Allt funkade perfekt, vi har fått bra och proffsig hjälp och arbetet blev snabbt genomfört. Vi är supernöjda med vårt nya kök med en modern design och bra kvalitet till ett rimligt pris. Kan verkligen rekommendera.
-        </blockquote>
-        <p>Esper N.</p>
-        <div>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="far fa-star"></i>
+        <div class="reviews show-review col-12 col-lg-4">
+          <div class="d-flex flex-column align-items-center">
+            <blockquote>Allt funkade perfekt, vi har fått bra och proffsig hjälp och arbetet blev snabbt genomfört. Vi är supernöjda med vårt nya kök med en modern design och bra kvalitet till ett rimligt pris. Kan verkligen rekommendera. Allt funkade perfekt, vi har fått bra och proffsig hjälp och arbetet blev snabbt genomfört. Vi är supernöjda med vårt nya kök med en modern design och bra kvalitet till ett rimligt pris. Kan verkligen rekommendera.
+            </blockquote>
+            <p>Esper N.</p>
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 <footer>
-  <div class="container">
-    <div>Nygammalt Kök Sverige AB | Adress: Silvåkragatan 62, 254 58 Helsingborg | Telefon: <a href="tel: 040 510 540">040-510 540</a> | Email: <a href="#">info@nygammaltkok.se</a> | <a href="#"><i class="fab fa-instagram"></i></a>  <a href="#"><i class="fab fa-facebook-square"></i></a></div>
-    <div><a href="https://nygammaltkok.se/integritetspolicy-2/">INTEGRITETSPOLICY</a> | <a href="http://inovator.dk/" target="_blank">Developed by Inovator</a></div>
-    <div class="copyright">
+  <div class="pt-3 text-center">
+    <div class="p-2">Nygammalt Kök Sverige AB | Adress: Silvåkragatan 62, 254 58 Helsingborg | Telefon: <a href="tel: 040 510 540">040-510 540</a> | Email: <a href="#">info@nygammaltkok.se</a></div>
+    <div class="p-2">
+      <a href="#"><i class="fab fa-instagram mx-2 fs-2"></i></a>
+      <a href="#"><i class="fab fa-facebook-square mx-2 fs-2"></i></a>
+    </div>
+    <div class="p-2"><a href="https://nygammaltkok.se/integritetspolicy-2/">INTEGRITETSPOLICY</a> | <a href="http://inovator.dk/" target="_blank">Developed by Inovator</a></div>
+    <div class="copyright px-4 pt-2 pb-3">
       <div class="copy"><script>document.write(new Date().getFullYear())</script>&copy ALL RIGHTS RESERVED</div>
     </div>
   </div>
