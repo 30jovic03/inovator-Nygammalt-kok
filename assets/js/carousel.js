@@ -1,21 +1,16 @@
+let items = document.querySelectorAll('.carousel-item')
 
-$('#my-carousel').on('slide.bs.carousel', function (e) {
-  
-  var $e = $(e.relatedTarget);
-  var idx = $e.index();
-  var itemsPerSlide = 5;
-  var totalItems = $('.carousel-item').length;
-
-  if (idx >= totalItems-(itemsPerSlide-1)) {
-      var it = itemsPerSlide - (totalItems - idx);
-      for (var i=0; i<it; i++) {
-          // append slides to end
-          if (e.direction=="left") {
-              $('.carousel-item').eq(i).appendTo('.carousel-inner');
-          }
-          else {
-              $('.carousel-item').eq(0).appendTo('.carousel-inner');
-          }
-      }
-  }
-});
+items.forEach((el) => {
+    // number of slides per carousel-item
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
